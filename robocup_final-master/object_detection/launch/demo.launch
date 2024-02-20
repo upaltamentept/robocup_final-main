@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+  <!-- Include the yolo launch file -->
+  <include file="$(find object_detection)/launch/object_detection.launch" />
+
+
+  <!-- Include the plane segmentation launch file -->
+  <include file="$(find plane_segmentation)/launch/plane_segmentation_tiago.launch" />
+
+
+  <!-- Include the state machine launch file -->
+  <include file="$(find task_manager)/launch/task_manager.launch" />
+
+  <!-- Start a node -->
+  <node name="grasp_node" pkg="grasp" type="grasp_node" output="screen" />
+</launch>

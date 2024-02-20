@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>task_manager</name>
+  <version>0.0.0</version>
+  <description>
+     A package for demostrating task management with state machine
+  </description>
+  <maintainer email="fengyi.wang@tum.de">Fengyi Wang</maintainer>
+  <license> bsd </license>
+  <exec_depend>moveit_commander</exec_depend>
+  <exec_depend>moveit_planners_ompl</exec_depend>
+  <exec_depend>moveit_ros_move_group</exec_depend>
+  <exec_depend>moveit_ros_visualization</exec_depend>
+  <exec_depend>moveit_setup_assistant</exec_depend>
+  <exec_depend>moveit_simple_controller_manager</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>rviz</exec_depend>
+  <exec_depend>topic_tools</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <test_depend>roslaunch</test_depend>
+</package>

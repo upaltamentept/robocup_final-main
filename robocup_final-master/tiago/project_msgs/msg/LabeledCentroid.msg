@@ -1,0 +1,2 @@
+int32 label
+geometry_msgs/PoseStamped pose

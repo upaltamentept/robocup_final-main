@@ -1,0 +1,9 @@
+<launch>
+
+  <!-- Set the param that trajectory_execution_manager needs to find the controller plugin -->
+  <node name="task_manager_node" type="task_manager_final.py" pkg="task_manager" output="screen" />
+
+  <!-- The rest of the params are specific to this plugin -->
+  <rosparam file="$(find task_manager)/config/way_points.yaml"/>
+  
+</launch>

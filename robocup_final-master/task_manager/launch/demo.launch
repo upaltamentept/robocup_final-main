@@ -1,0 +1,19 @@
+<launch>
+    <!-- Launching darknet_ros -->
+    <include file="$(find darknet_ros)/launch/darknet_ros.launch" />
+
+    <!-- Launching plane_segmentation -->
+    <include file="$(find plane_segmentation)/launch/plane_segmentation_tiago.launch" />
+
+    <!-- Launching distance_detection -->
+    <node name="distance_detection" pkg="plane_segmentation" type="distance_detection" />
+
+    <!-- Launching object_labeling -->
+    <include file="$(find object_labeling)/launch/object_labeling.launch" />
+
+    <!-- Launching obstacle_converter_node -->
+    <node name="obstacle_converter_node" pkg="obstacle_converter" type="obstacle_converter_node" />
+
+    <!-- Launching place_pose_node -->
+    <node name="place_pose_node" pkg="place_pose" type="place_pose_node" />
+</launch>
